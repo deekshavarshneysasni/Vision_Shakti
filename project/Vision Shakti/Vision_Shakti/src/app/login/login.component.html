@@ -1,0 +1,50 @@
+
+  
+<body>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a routerLink="/Home" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><img src="assets/img/newlogo.png" alt="Logo" class="logo-img me-3 icon-size">Vision Shakti</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a routerLink="/" class="nav-item nav-link active">Home</a>
+                <a routerLink="/about" class="nav-item nav-link">About</a>
+                <a routerLink="/event" class="nav-item nav-link">Event</a>
+                <a routerLink="/courses" class="nav-item nav-link">Courses</a>
+                <a routerLink="/contact" class="nav-item nav-link">Contact</a>
+            </div>
+            <a routerLink="/donate" class=" py-4 px-lg-1 d-none d-lg-block">Donate<i class="fa fa-heart" style="color: red;"></i></a>
+            <a routerLink="/login" class="btn btn-primary py-4 px-lg-2 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+           
+          
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <section class="container">
+        <div class="login-container">
+            <div class="circle circle-one"></div>
+            <div class="form-container">
+                <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="illustration" class="illustration" />
+                <h1 class="opacity">LOGIN</h1>
+                <form [formGroup]="form" (submit)="submit()">
+                    <input formControlName="email" type="email" class="form-control" placeholder="Enter Email">
+
+                    <input formControlName="password" type="password" class="form-control" placeholder="Enter Password">
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Log In</button>
+                </form>
+                <div class="register-forget opacity">
+                    <a routerLink="/courses">REGISTER</a>
+                    <a routerLink="">FORGOT PASSWORD</a>
+                </div>
+            </div>
+            <div class="circle circle-two"></div>
+        </div>
+        <div class="theme-btn-container"></div>
+    </section>
+
+    
+</body>

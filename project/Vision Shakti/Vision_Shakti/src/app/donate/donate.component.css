@@ -1,0 +1,88 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+
+  }
+
+
+
+
+  .header_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+  .header_hero {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+  .header_hero__text h2 {
+    color: #162135;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-left: 30%;
+    text-transform: capitalize;
+  }
+  
+
+  
+  .header_hero__text p {
+    font-size: 1.5rem;
+    color: #07173e;
+    margin-bottom: 10%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+ 
+@media (max-width: 768px) {
+  .header_hero__text h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .header_hero__text h2 {
+    font-size: 2.5rem;
+  }
+}
+.image-donate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.img{
+  background: url('https://img.freepik.com/free-vector/hand-generous-person-putting-heart-jar_74855-20127.jpg?t=st=1710079198~exp=1710082798~hmac=f3f57f4c4e9fef79a88b3dc026b67a7c592613d6ad6cd8c136ecb5bbe012c104&w=900')no-repeat;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.image-donate-container,
+.donate-button-container {
+  flex: 1;
+ 
+  justify-content: center; 
+}
+.image-donate-container {
+  padding-right: 15px;
+}
+
+.donate-button-container {
+  padding-left: 15px;
+ 
+}
+#rzp-button1{
+  margin-left: 43%;
+}

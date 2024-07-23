@@ -1,0 +1,54 @@
+/* Default h1 style */
+h1 {
+    font-size: 3em;
+    color: aliceblue;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    /* Apply styles for screens smaller than 768px */
+    .w3-padding-large {
+      padding: 10px;
+    }
+    
+    /* Adjust h1 font size for smaller screens */
+    h1 {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Further adjustments for screens smaller than 576px if needed */
+    h1 {
+      font-size: 1.5em;
+    }
+  }
+  .image {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    /* Apply styles for screens smaller than 768px */
+    .image {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    /* Apply styles for screens between 769px and 991px */
+    .image {
+        max-width: 80%;
+    }
+}@media only screen and (max-width: 768px) {
+  .w3-col.m6 {
+      width: 100% !important;
+      margin-top: 20px !important; /* Adjust margin-top as needed */
+  }
+}
+@media screen and (min-width: 768px) {
+  .w3-col.m6 {
+      width: 50%;
+  }
+}
